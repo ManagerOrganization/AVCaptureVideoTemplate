@@ -13,6 +13,8 @@
 		56CB79801B5F748E0027848B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CB797F1B5F748E0027848B /* Images.xcassets */; };
 		56CB79831B5F748E0027848B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79811B5F748E0027848B /* LaunchScreen.xib */; };
 		56CB798F1B5F748E0027848B /* AVCaptureVideoTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB798E1B5F748E0027848B /* AVCaptureVideoTemplateTests.swift */; };
+		56CB79A31B5F76170027848B /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79A11B5F76170027848B /* line@2x.png */; };
+		56CB79A41B5F76170027848B /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79A21B5F76170027848B /* pick_bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		56CB79881B5F748E0027848B /* AVCaptureVideoTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureVideoTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CB798D1B5F748E0027848B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CB798E1B5F748E0027848B /* AVCaptureVideoTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureVideoTemplateTests.swift; sourceTree = "<group>"; };
+		56CB79A11B5F76170027848B /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		56CB79A21B5F76170027848B /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		56CB79751B5F748E0027848B /* AVCaptureVideoTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				56CB799C1B5F759B0027848B /* Images */,
 				56CB79781B5F748E0027848B /* AppDelegate.swift */,
 				56CB797A1B5F748E0027848B /* ViewController.swift */,
 				56CB797C1B5F748E0027848B /* Main.storyboard */,
@@ -110,6 +115,15 @@
 				56CB798D1B5F748E0027848B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56CB799C1B5F759B0027848B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79A11B5F76170027848B /* line@2x.png */,
+				56CB79A21B5F76170027848B /* pick_bg@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CB79A31B5F76170027848B /* line@2x.png in Resources */,
 				56CB797E1B5F748E0027848B /* Main.storyboard in Resources */,
 				56CB79831B5F748E0027848B /* LaunchScreen.xib in Resources */,
 				56CB79801B5F748E0027848B /* Images.xcassets in Resources */,
+				56CB79A41B5F76170027848B /* pick_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVCaptureVideoTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVCaptureVideoTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
