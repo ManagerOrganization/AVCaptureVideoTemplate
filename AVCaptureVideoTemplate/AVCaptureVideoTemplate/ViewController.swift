@@ -18,10 +18,9 @@ class ViewController: UIViewController,AVCaptureVideoDataOutputSampleBufferDeleg
     var line : UIImageView = UIImageView(image: UIImage(named: "line"))
     var timer : NSTimer!
     var upOrdown = true
-    var isStart = false
-    
-    @IBOutlet weak var DisplayImage: UIImageView!
-    
+    var isStart = true
+    var displayImage = UIImageView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,9 +41,10 @@ class ViewController: UIViewController,AVCaptureVideoDataOutputSampleBufferDeleg
         line.frame = CGRect(x: self.view.bounds.width / 2 - 100, y: self.view.bounds.height / 2 - 100, width: 200, height: 2)
         self.view.addSubview(pickUIImager)
         self.view.addSubview(line)
+        self.view.addSubview(displayImage)
         timer =  NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "animationSate", userInfo: nil, repeats: true)
         // Do any additional setup after loading the view, typically from a nib.
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "isStartTrue", userInfo: nil, repeats: false)
+      //  NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "isStartTrue", userInfo: nil, repeats: false)
     }
     
     func isStartTrue(){
@@ -57,9 +57,6 @@ class ViewController: UIViewController,AVCaptureVideoDataOutputSampleBufferDeleg
         
     }
     
-    
-    
-    //动态显示扫描线的方法
     func animationSate(){
         if upOrdown {
             if (line.frame.origin.y >= pickUIImager.frame.origin.y + 200)
@@ -81,11 +78,6 @@ class ViewController: UIViewController,AVCaptureVideoDataOutputSampleBufferDeleg
             }
         }
     }
-    
-    
-    
-    
-    
     
     func configureDevice() {
         if let device = captureDevice {
@@ -141,7 +133,7 @@ class ViewController: UIViewController,AVCaptureVideoDataOutputSampleBufferDeleg
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     {
-                        self.DisplayImage.image = faceImage
+                        self.displayImage.image = faceImage
                     }
                 }
             }
