@@ -15,6 +15,8 @@
 		56CB798F1B5F748E0027848B /* AVCaptureVideoTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB798E1B5F748E0027848B /* AVCaptureVideoTemplateTests.swift */; };
 		56CB79A31B5F76170027848B /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79A11B5F76170027848B /* line@2x.png */; };
 		56CB79A41B5F76170027848B /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79A21B5F76170027848B /* pick_bg@2x.png */; };
+		56CB79A81B5F96540027848B /* AVCaptireVideoPicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB79A61B5F96540027848B /* AVCaptireVideoPicController.swift */; };
+		56CB79A91B5F96540027848B /* AVCaptireVideoPicStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CB79A71B5F96540027848B /* AVCaptireVideoPicStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		56CB798E1B5F748E0027848B /* AVCaptureVideoTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureVideoTemplateTests.swift; sourceTree = "<group>"; };
 		56CB79A11B5F76170027848B /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		56CB79A21B5F76170027848B /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		56CB79A61B5F96540027848B /* AVCaptireVideoPicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptireVideoPicController.swift; sourceTree = "<group>"; };
+		56CB79A71B5F96540027848B /* AVCaptireVideoPicStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AVCaptireVideoPicStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		56CB79751B5F748E0027848B /* AVCaptureVideoTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				56CB79A51B5F96190027848B /* AVCaptureVideoPic */,
 				56CB799C1B5F759B0027848B /* Images */,
 				56CB79781B5F748E0027848B /* AppDelegate.swift */,
 				56CB797A1B5F748E0027848B /* ViewController.swift */,
@@ -124,6 +129,15 @@
 				56CB79A21B5F76170027848B /* pick_bg@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		56CB79A51B5F96190027848B /* AVCaptureVideoPic */ = {
+			isa = PBXGroup;
+			children = (
+				56CB79A61B5F96540027848B /* AVCaptireVideoPicController.swift */,
+				56CB79A71B5F96540027848B /* AVCaptireVideoPicStoryboard.storyboard */,
+			);
+			name = AVCaptureVideoPic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CB79A91B5F96540027848B /* AVCaptireVideoPicStoryboard.storyboard in Resources */,
 				56CB79A31B5F76170027848B /* line@2x.png in Resources */,
 				56CB797E1B5F748E0027848B /* Main.storyboard in Resources */,
 				56CB79831B5F748E0027848B /* LaunchScreen.xib in Resources */,
@@ -230,6 +245,7 @@
 			files = (
 				56CB797B1B5F748E0027848B /* ViewController.swift in Sources */,
 				56CB79791B5F748E0027848B /* AppDelegate.swift in Sources */,
+				56CB79A81B5F96540027848B /* AVCaptireVideoPicController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
